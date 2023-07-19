@@ -13,3 +13,15 @@ int multiply_numbers(int x, int y)
     product = x * y;
     return {product};
 }
+
+/**
+ * main - Entry point of the program
+ * Return: (0) perfect
+ */
+int main(void)
+{
+int result = multiply_numbers(10, 8);
+printf("The product is: %d\n", result);
+return (0);
+}
+
