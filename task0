@@ -9,19 +9,18 @@
  */
 int multiply_numbers(int x, int y)
 {
-	int product;
-	product = x * y;
-	return {product};
+    int product;
+    product = x * y;
+    return product;
 }
-
 /**
  * main - Entry point of the program
- * Return: (0) perfect
+ *
+ * Return: 0 on success
  */
 int main(void)
 {
-	int result = multiply_numbers(10, 8);
-	printf("The product is: %d\n", result);
-	return (0);
+    int result = multiply_numbers(10, 8);
+    printf("The product is: %d\n", result);
+    return 0;
 }
-
