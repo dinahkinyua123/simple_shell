@@ -20,7 +20,7 @@ int multiply_numbers(int x, int y)
  */
 int main(void)
 {
-    int result = multiply_numbers(10, 8);
+    int result = multiply_numbers(x, y);
     printf("The product is: %d\n", result);
     return 0;
 }
