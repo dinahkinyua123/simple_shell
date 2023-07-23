@@ -18,7 +18,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 	{
 		free(*buf);
 		*buf = NULL;
-		signal(SIGINT, sigintHandler);
+		strsignal(SIGINT, sigintHandler);
 #if USE_GETLINE
 		r = getline(buf, &len_p, stdin);
 #else
@@ -28,7 +28,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 		{
 			if ((*buf)[r - 1] == '\n')
 			{
-				(*buf)[r - 1] = '\0' :
+				(*buf)[r - 1] = '\0';
 				r--;
 			}
 			info->linecount_flag = 1;
