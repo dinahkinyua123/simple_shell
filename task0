@@ -1,11 +1,11 @@
 #include "Shell.h"
 #include <stdio.h>
 /**
- * multiply_numbers - multiplies two integers
- * @x: first integer
- * @y: second integer
+ * multiply_numbers - Multiplies two integers.
+ * @x: First integer.
+ * @y: Second integer.
  *
- * Return: the product of two integers
+ * Return: The product of two integers.
  */
 int multiply_numbers(int x, int y)
 {
@@ -13,14 +13,16 @@ int multiply_numbers(int x, int y)
     product = x * y;
     return product;
 }
+
 /**
- * main - Entry point of the program
+ * main - Entry point of the program.
  *
- * Return: 0 on success
+ * Return: 0 on success.
  */
 int main(void)
 {
     int result = multiply_numbers(10, 8);
-    printf("The product is: %d\n", result);
+    /* Use the result variable as needed (e.g., pass it to other functions or use it further) */
     return 0;
 }
+
