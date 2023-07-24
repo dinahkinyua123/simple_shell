@@ -1,4 +1,6 @@
 #include "Shell.h"
+#include "sys/types.h"
+#include "sys/wait.h"
 
 /**
  * hsh - is main shell loop
