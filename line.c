@@ -1,4 +1,5 @@
 #include "Shell.h"
+#include <signal.h>
 
 /**
  * input_buf - inputs the buffers chained commands
@@ -18,7 +19,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 	{
 		free(*buf);
 		*buf = NULL;
-		strsignal(SIGINT, sigintHandler);
+		signal(SIGINT, sigintHandler);
 #if USE_GETLINE
 		r = getline(buf, &len_p, stdin);
 #else
