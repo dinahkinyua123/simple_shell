@@ -21,7 +21,7 @@ int multiply_numbers(int x, int y)
  */
 int main(void)
 {
-    int result = multiply_numbers(10, 8);
+    int result = multiply_numbers(9, 7);
     /* Use the result variable as needed */
     return 0;
 }
